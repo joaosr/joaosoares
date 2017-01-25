@@ -1,4 +1,4 @@
-\ProvidesClass{willianpaixao-resume}
+\ProvidesClass{joaosoares-resume}
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
