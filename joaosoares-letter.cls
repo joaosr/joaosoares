@@ -63,7 +63,6 @@
         	\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{5pt}\selectfont #3
         \end{center}
 	\end{center}
-    \vspace{60pt}
 }
 
 \newcommand{\lpipe}{\rule[-0.4ex]{0.41pt}{2.3ex}}
