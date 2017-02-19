@@ -93,7 +93,7 @@
   {\raggedright \toname \\ \toaddress \par}%
   {\raggedleft\@date\par}
   {\raggedright\re{#2}\par}
-  \vspace{2\parskip}%
+  \vspace{1\parskip}%
   #1\par\nobreak}
 
 \renewcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
@@ -102,7 +102,7 @@
   \ifx\@empty\fromaddress\else
   \hspace*{\longindentation}\fi
   \parbox{\textwidth}{\raggedright
-       \ignorespaces #1\\[4\medskipamount]%
+       \ignorespaces #1\\[3\medskipamount]%
        \ifx\@empty\fromsig
            \fromname
        \else \fromsig \fi\strut}%
