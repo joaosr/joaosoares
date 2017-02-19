@@ -10,7 +10,7 @@
 \usepackage[UKenglish]{isodate}
 
 \usepackage{geometry}
-\geometry{a4paper,top=2cm,left=2cm,right=2cm}
+\geometry{a4paper,top=1cm,left=1cm,right=1cm}
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
@@ -53,7 +53,7 @@
 % Name command
 \newcommand*{\namesection}[3]{
 	\begin{center}
-		\fontsize{30pt}{10pt}
+		\fontsize{20pt}{10pt}
         \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1 
         \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
         \noindent\makebox[\linewidth]{\color{headings}\rule{\textwidth}{0.4pt}}\\
@@ -63,7 +63,6 @@
         	\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{5pt}\selectfont #3
         \end{center}
 	\end{center}
-    \vspace{60pt}
 }
 
 \newcommand{\lpipe}{\rule[-0.4ex]{0.41pt}{2.3ex}}
@@ -96,6 +95,18 @@
   {\raggedright\re{#2}\par}
   \vspace{2\parskip}%
   #1\par\nobreak}
+
+\renewcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
+  \stopbreaks
+  \noindent
+  \ifx\@empty\fromaddress\else
+  \hspace*{\longindentation}\fi
+  \parbox{\textwidth}{\raggedright
+       \ignorespaces #1\\[4\medskipamount]%
+       \ifx\@empty\fromsig
+           \fromname
+       \else \fromsig \fi\strut}%
+   \par}
   
 \renewcommand{\encl}[1]{%
   \par\noindent

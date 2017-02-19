@@ -69,11 +69,13 @@
     } \\[5pt]
     \centering{
         \color{headings}
-        \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+        \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{12pt}\selectfont #3}
         \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}
     }
-    \vspace{-15pt}
+    \vspace{-20pt}
 }
+
+\newcommand{\lpipe}{\rule[-0.4ex]{0.41pt}{2.3ex}}
 
 % Section separators 
 \usepackage{titlesec}
