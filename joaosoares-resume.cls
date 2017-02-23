@@ -72,7 +72,7 @@
         \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{12pt}\selectfont #3}
         \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}
     }
-    \vspace{-20pt}
+    \vspace{-10pt}
 }
 
 \newcommand{\lpipe}{\rule[-0.4ex]{0.41pt}{2.3ex}}
