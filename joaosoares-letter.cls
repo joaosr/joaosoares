@@ -10,7 +10,7 @@
 \usepackage[UKenglish]{isodate}
 
 \usepackage{geometry}
-\geometry{a4paper,top=1cm,left=1cm,right=1cm}
+\geometry{a4paper,top=2cm,left=2cm,right=2cm}
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
