@@ -93,7 +93,7 @@
   {\raggedright \toname \\ \toaddress \par}%
   {\raggedleft\@date\par}
   {\raggedright\re{#2}\par}
-  \vspace{1\parskip}%
+  \vspace{2\parskip}%
   #1\par\nobreak}
 
 \renewcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
