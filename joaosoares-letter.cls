@@ -77,7 +77,8 @@
     \color{subheadings}
     \fontspec[Path = fonts/raleway/]{Raleway-Medium}
     \fontsize{10pt}{12pt}\selectfont 
-    RE: #1
+%    RE: #1
+	#1
 }
 
 \renewcommand{\opening}[2]{\ifx\@empty\fromaddress
