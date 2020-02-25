@@ -1,4 +1,4 @@
-\ProvidesClass{joaosoares-letter}
+\ProvidesClass{cover-letter}
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
@@ -13,7 +13,7 @@
 \geometry{a4paper,top=2cm,left=2cm,right=2cm}
 
 % Color definitions
-\usepackage[usenames,dvipsnames]{xcolor} 
+\usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{date}{HTML}{666666}
 \definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
@@ -54,7 +54,7 @@
 \newcommand*{\namesection}[3]{
 	\begin{center}
 		\fontsize{20pt}{10pt}
-        \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1 
+        \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1
         \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
         \noindent\makebox[\linewidth]{\color{headings}\rule{\textwidth}{0.4pt}}\\
         [5pt]
@@ -76,14 +76,14 @@
 \newcommand{\re}[1]{
     \color{subheadings}
     \fontspec[Path = fonts/raleway/]{Raleway-Medium}
-    \fontsize{10pt}{12pt}\selectfont 
+    \fontsize{10pt}{12pt}\selectfont
 %    RE: #1
 	#1
 }
 
 \renewcommand{\opening}[2]{\ifx\@empty\fromaddress
   \thispagestyle{firstpage}%
-    
+
   \else  % home address
     \thispagestyle{empty}%
     {\raggedleft\begin{tabular}{l@{}}\ignorespaces
@@ -108,16 +108,16 @@
            \fromname
        \else \fromsig \fi\strut}%
    \par}
-  
+
 \renewcommand{\encl}[1]{%
   \par\noindent
   \parbox[t]{\textwidth}{%
     \@hangfrom{\normalfont\enclname: }%
      #1\strut}\par}
 
-\usepackage[usenames,dvipsnames]{xcolor} 
-\definecolor{primary}{HTML}{2b2b2b} 
-%\definecolor{date}{HTML}{666666} 
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{primary}{HTML}{2b2b2b}
+%\definecolor{date}{HTML}{666666}
 %\definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -127,4 +127,3 @@
 
 %\usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
-
